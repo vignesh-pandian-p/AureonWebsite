@@ -44,6 +44,11 @@ export default {
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",
+        // Aureon Tech custom colors
+        "aureon-primary": "var(--aureon-primary)",
+        "aureon-secondary": "var(--aureon-secondary)",
+        "aureon-accent": "var(--aureon-accent)",
+        "aureon-slate": "var(--aureon-slate)",
         chart: {
           "1": "var(--chart-1)",
           "2": "var(--chart-2)",

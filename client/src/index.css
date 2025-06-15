@@ -80,7 +80,10 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-gradient-to-r from-aureon-primary to-aureon-secondary bg-clip-text text-transparent;
+    background: linear-gradient(to right, hsl(224, 76%, 48%), hsl(217, 91%, 60%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .animate-float {
@@ -115,43 +118,43 @@
   }
 
   .bg-aureon-primary {
-    background-color: var(--aureon-primary);
+    background-color: hsl(224, 76%, 48%);
   }
 
   .bg-aureon-secondary {
-    background-color: var(--aureon-secondary);
+    background-color: hsl(217, 91%, 60%);
   }
 
   .bg-aureon-accent {
-    background-color: var(--aureon-accent);
+    background-color: hsl(43, 96%, 56%);
   }
 
   .text-aureon-primary {
-    color: var(--aureon-primary);
+    color: hsl(224, 76%, 48%);
   }
 
   .text-aureon-secondary {
-    color: var(--aureon-secondary);
+    color: hsl(217, 91%, 60%);
   }
 
   .text-aureon-accent {
-    color: var(--aureon-accent);
+    color: hsl(43, 96%, 56%);
   }
 
   .text-aureon-slate {
-    color: var(--aureon-slate);
+    color: hsl(215, 16%, 47%);
   }
 
   .border-aureon-primary {
-    border-color: var(--aureon-primary);
+    border-color: hsl(224, 76%, 48%);
   }
 
   .hover\:bg-aureon-primary:hover {
-    background-color: var(--aureon-primary);
+    background-color: hsl(224, 76%, 48%);
   }
 
   .hover\:text-aureon-primary:hover {
-    color: var(--aureon-primary);
+    color: hsl(224, 76%, 48%);
   }
 }
 
