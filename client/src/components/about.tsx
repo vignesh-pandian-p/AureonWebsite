@@ -63,8 +63,8 @@ export default function About() {
             className="relative"
           >
             <img 
-              src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional team collaborating on technology project in modern office" 
+              src="/src/assets/images/about-team.svg" 
+              alt="Professional development team with 24/7 support infrastructure and collaborative workspace" 
               className="rounded-2xl shadow-xl w-full"
             />
             

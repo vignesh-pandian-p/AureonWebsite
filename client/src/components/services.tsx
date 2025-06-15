@@ -9,7 +9,11 @@ const services = [
     icon: Code,
     title: "Web Development",
     description: "Modern web applications using React.js, Vue.js, Angular, and advanced backend frameworks like Node.js, Django, and Spring Boot.",
-    technologies: ["React.js", "Node.js", "Django"],
+    technologies: [
+      { name: "React.js", logo: ReactLogo },
+      { name: "Node.js", logo: NodeLogo },
+      { name: "Django", logo: DjangoLogo }
+    ],
     gradient: "from-blue-50 to-indigo-50",
     iconColor: "bg-aureon-primary",
     badgeColor: "text-aureon-primary"
@@ -18,7 +22,11 @@ const services = [
     icon: Cloud,
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure using AWS, Azure, and Google Cloud with DevOps automation and containerization.",
-    technologies: ["AWS", "Docker", "Kubernetes"],
+    technologies: [
+      { name: "AWS", logo: AWSLogo },
+      { name: "Docker", logo: DockerLogo },
+      { name: "Kubernetes", logo: KubernetesLogo }
+    ],
     gradient: "from-green-50 to-emerald-50",
     iconColor: "bg-green-600",
     badgeColor: "text-green-600"
@@ -27,7 +35,11 @@ const services = [
     icon: Database,
     title: "Data & Analytics",
     description: "Big data processing, machine learning solutions, and business intelligence using Python, R, and advanced analytics platforms.",
-    technologies: ["Python", "TensorFlow", "Power BI"],
+    technologies: [
+      { name: "Python", logo: PythonLogo },
+      { name: "TensorFlow", logo: TensorFlowLogo },
+      { name: "Power BI", logo: AIMLLogo }
+    ],
     gradient: "from-purple-50 to-violet-50",
     iconColor: "bg-purple-600",
     badgeColor: "text-purple-600"
@@ -36,7 +48,11 @@ const services = [
     icon: Smartphone,
     title: "Mobile Development",
     description: "Cross-platform mobile applications using React Native, Flutter, and native iOS/Android development.",
-    technologies: ["React Native", "Flutter", "Swift"],
+    technologies: [
+      { name: "React Native", logo: ReactNativeLogo },
+      { name: "Flutter", logo: FlutterLogo },
+      { name: "Swift", logo: SwiftLogo }
+    ],
     gradient: "from-orange-50 to-red-50",
     iconColor: "bg-orange-600",
     badgeColor: "text-orange-600"
@@ -45,7 +61,11 @@ const services = [
     icon: Shield,
     title: "DevOps & Security",
     description: "CI/CD pipelines, infrastructure automation, and comprehensive cybersecurity solutions to protect your digital assets.",
-    technologies: ["Jenkins", "Terraform", "Security"],
+    technologies: [
+      { name: "Jenkins", logo: JenkinsLogo },
+      { name: "Docker", logo: DockerLogo },
+      { name: "Security", logo: AIMLLogo }
+    ],
     gradient: "from-red-50 to-pink-50",
     iconColor: "bg-red-600",
     badgeColor: "text-red-600"
@@ -54,7 +74,11 @@ const services = [
     icon: Brain,
     title: "AI & Machine Learning",
     description: "Intelligent automation, predictive analytics, and custom AI solutions to drive business innovation and efficiency.",
-    technologies: ["AI/ML", "PyTorch", "OpenAI"],
+    technologies: [
+      { name: "AI/ML", logo: AIMLLogo },
+      { name: "PyTorch", logo: TensorFlowLogo },
+      { name: "OpenAI", logo: AIMLLogo }
+    ],
     gradient: "from-yellow-50 to-amber-50",
     iconColor: "bg-aureon-accent",
     badgeColor: "text-aureon-accent"
@@ -93,15 +117,19 @@ export default function Services() {
                   <h3 className="font-roboto text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <div className="flex flex-wrap gap-2">
-                    {service.technologies.map((tech) => (
-                      <Badge 
-                        key={tech} 
-                        variant="secondary" 
-                        className={`bg-white ${service.badgeColor} font-medium`}
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
+                    {service.technologies.map((tech, index) => {
+                      const LogoComponent = tech.logo;
+                      return (
+                        <Badge 
+                          key={`${service.title}-${tech.name}-${index}`}
+                          variant="secondary" 
+                          className={`bg-white ${service.badgeColor} font-medium flex items-center gap-2`}
+                        >
+                          <LogoComponent />
+                          {tech.name}
+                        </Badge>
+                      );
+                    })}
                   </div>
                 </CardContent>
               </Card>

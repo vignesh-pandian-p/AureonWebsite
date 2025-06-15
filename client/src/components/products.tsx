@@ -49,8 +49,8 @@ export default function Products() {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-              alt="Abstract digital technology innovation concept with connected networks" 
+              src="/src/assets/images/products-innovation.svg" 
+              alt="Enterprise digital products dashboard with analytics and data visualization" 
               className="rounded-2xl shadow-xl w-full"
             />
           </motion.div>

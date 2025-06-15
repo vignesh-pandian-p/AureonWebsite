@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import { motion } from "framer-motion";
+import heroTechSvg from "@/assets/images/hero-tech.svg";
 
 export default function Hero() {
   const scrollToSection = (sectionId: string) => {

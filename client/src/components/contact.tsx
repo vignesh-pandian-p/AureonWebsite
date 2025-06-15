@@ -218,8 +218,8 @@ export default function Contact() {
             className="space-y-8"
           >
             <img 
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400" 
-              alt="Digital transformation concept with connected global network visualization" 
+              src="/src/assets/images/contact-network.svg" 
+              alt="Global technology network hub with digital transformation connectivity" 
               className="rounded-xl w-full"
             />
             
