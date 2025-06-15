@@ -78,21 +78,21 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@aureontech.com",
+      value: "aureonx.tech@gmail.com",
       color: "bg-aureon-accent"
     },
-    {
-      icon: Phone,
-      title: "Phone",
-      value: "+1 (555) 123-4567",
-      color: "bg-aureon-accent"
-    },
-    {
-      icon: MapPin,
-      title: "Location",
-      value: "Silicon Valley, CA",
-      color: "bg-aureon-accent"
-    }
+    // {
+    //   icon: Phone,
+    //   title: "Phone",
+    //   // value: "+1 (555) 123-4567",
+    //   color: "bg-aureon-accent"
+    // },
+    // {
+    //   icon: MapPin,
+    //   title: "Location",
+    //   value: "Silicon Valley, CA",
+    //   color: "bg-aureon-accent"
+    // }
   ];
 
   return (

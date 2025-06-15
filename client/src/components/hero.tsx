@@ -78,7 +78,7 @@ export default function Hero() {
             className="relative"
           >
             <img 
-              src="/src/assets/images/hero-tech.svg" 
+              src={heroTechSvg} 
               alt="Modern IT network infrastructure with connected technology nodes" 
               className="rounded-2xl shadow-2xl w-full"
             />
