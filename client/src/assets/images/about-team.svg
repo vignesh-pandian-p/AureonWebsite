@@ -1,0 +1,93 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.9" />
+    </linearGradient>
+    <linearGradient id="supportGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f1f5f9"/>
+  
+  <!-- Office environment -->
+  <rect x="0" y="400" width="800" height="200" fill="#e2e8f0"/>
+  <rect x="50" y="350" width="700" height="50" fill="url(#teamGradient)" opacity="0.3"/>
+  
+  <!-- Workstations -->
+  <g fill="url(#teamGradient)">
+    <rect x="100" y="320" width="80" height="60" rx="8" />
+    <rect x="250" y="320" width="80" height="60" rx="8" />
+    <rect x="400" y="320" width="80" height="60" rx="8" />
+    <rect x="550" y="320" width="80" height="60" rx="8" />
+  </g>
+  
+  <!-- Monitors/Screens -->
+  <g fill="#1e293b">
+    <rect x="110" y="300" width="60" height="35" rx="4" />
+    <rect x="260" y="300" width="60" height="35" rx="4" />
+    <rect x="410" y="300" width="60" height="35" rx="4" />
+    <rect x="560" y="300" width="60" height="35" rx="4" />
+  </g>
+  
+  <!-- Screen content -->
+  <g fill="#10b981" font-family="monospace" font-size="8">
+    <text x="115" y="315">CODE</text>
+    <text x="265" y="315">DATA</text>
+    <text x="415" y="315">API</text>
+    <text x="565" y="315">AI</text>
+  </g>
+  
+  <!-- Collaboration network -->
+  <g stroke="url(#supportGradient)" stroke-width="2" fill="none" opacity="0.6">
+    <path d="M140 300 Q200 250 260 300" />
+    <path d="M320 300 Q360 250 410 300" />
+    <path d="M480 300 Q520 250 560 300" />
+    <path d="M140 250 Q300 200 440 250" />
+  </g>
+  
+  <!-- Team member indicators -->
+  <g fill="url(#supportGradient)">
+    <circle cx="140" cy="280" r="8" />
+    <circle cx="290" cy="280" r="8" />
+    <circle cx="440" cy="280" r="8" />
+    <circle cx="590" cy="280" r="8" />
+  </g>
+  
+  <!-- 24/7 Support indicator -->
+  <g transform="translate(650, 100)">
+    <circle cx="0" cy="0" r="40" fill="url(#supportGradient)" opacity="0.2"/>
+    <circle cx="0" cy="0" r="25" fill="url(#supportGradient)"/>
+    <text x="0" y="-5" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">24/7</text>
+    <text x="0" y="8" text-anchor="middle" fill="white" font-family="Arial" font-size="8">SUPPORT</text>
+    <!-- Pulsing animation effect -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="url(#supportGradient)" stroke-width="2" opacity="0.5">
+      <animate attributeName="r" values="25;35;25" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Innovation elements -->
+  <g fill="url(#teamGradient)" opacity="0.7">
+    <path d="M150 150 L140 120 L160 120 L145 90 L175 110 L155 110 Z" />
+    <path d="M400 180 L390 150 L410 150 L395 120 L425 140 L405 140 Z" />
+    <path d="M600 200 L590 170 L610 170 L595 140 L625 160 L605 160 Z" />
+  </g>
+  
+  <!-- Data flow -->
+  <g stroke="#f59e0b" stroke-width="3" fill="none" opacity="0.6">
+    <path d="M100 200 Q200 180 300 200 Q400 220 500 200 Q600 180 700 200" />
+  </g>
+  
+  <!-- Statistics display -->
+  <g fill="url(#teamGradient)">
+    <rect x="50" y="50" width="200" height="120" rx="12" fill="white" stroke="url(#teamGradient)" stroke-width="2"/>
+    <text x="150" y="80" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">100+</text>
+    <text x="150" y="100" text-anchor="middle" font-family="Arial" font-size="12">Projects</text>
+    <text x="150" y="130" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">50+</text>
+    <text x="150" y="150" text-anchor="middle" font-family="Arial" font-size="12">Clients</text>
+  </g>
+</svg>

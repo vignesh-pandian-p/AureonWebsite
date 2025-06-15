@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Cloud, Database, Smartphone, Shield, Brain } from "lucide-react";
 import { motion } from "framer-motion";
+import { ReactLogo, NodeLogo, DjangoLogo, AWSLogo, DockerLogo, KubernetesLogo, PythonLogo, TensorFlowLogo, ReactNativeLogo, FlutterLogo, SwiftLogo, JenkinsLogo, AIMLLogo } from "@/assets/images/tech-logos";
 
 const services = [
   {

@@ -1,0 +1,109 @@
+<svg viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="contactGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="glowEffect" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="400" fill="#0f172a"/>
+  
+  <!-- Global network grid -->
+  <g stroke="#1e40af" stroke-width="1" opacity="0.3">
+    <circle cx="400" cy="200" r="150" fill="none" />
+    <circle cx="400" cy="200" r="100" fill="none" />
+    <circle cx="400" cy="200" r="50" fill="none" />
+    <line x1="250" y1="200" x2="550" y2="200" />
+    <line x1="400" y1="50" x2="400" y2="350" />
+    <line x1="294" y1="94" x2="506" y2="306" />
+    <line x1="506" y1="94" x2="294" y2="306" />
+  </g>
+  
+  <!-- Central hub -->
+  <circle cx="400" cy="200" r="30" fill="url(#contactGradient)" />
+  <circle cx="400" cy="200" r="35" fill="url(#glowEffect)" />
+  <text x="400" y="208" text-anchor="middle" fill="white" font-family="Arial" font-size="12" font-weight="bold">HUB</text>
+  
+  <!-- Connection nodes -->
+  <g fill="url(#goldAccent)">
+    <circle cx="300" cy="120" r="12" />
+    <circle cx="500" cy="120" r="12" />
+    <circle cx="550" cy="200" r="12" />
+    <circle cx="500" cy="280" r="12" />
+    <circle cx="300" cy="280" r="12" />
+    <circle cx="250" cy="200" r="12" />
+    <circle cx="350" cy="150" r="8" />
+    <circle cx="450" cy="150" r="8" />
+    <circle cx="450" cy="250" r="8" />
+    <circle cx="350" cy="250" r="8" />
+  </g>
+  
+  <!-- Data streams -->
+  <g stroke="url(#goldAccent)" stroke-width="2" fill="none">
+    <path d="M300 120 Q350 160 400 170">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M500 120 Q450 160 400 170">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M550 200 Q470 200 430 200">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M500 280 Q450 240 400 230">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M300 280 Q350 240 400 230">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M250 200 Q330 200 370 200">
+      <animate attributeName="stroke-dasharray" values="0,100;100,0" dur="3s" begin="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Technology symbols -->
+  <g fill="white" font-family="Arial" font-size="10" font-weight="bold">
+    <text x="300" y="125" text-anchor="middle">WEB</text>
+    <text x="500" y="125" text-anchor="middle">API</text>
+    <text x="555" y="205" text-anchor="middle">DB</text>
+    <text x="500" y="285" text-anchor="middle">AI</text>
+    <text x="300" y="285" text-anchor="middle">IoT</text>
+    <text x="245" y="205" text-anchor="middle">APP</text>
+  </g>
+  
+  <!-- Satellite connections -->
+  <g stroke="url(#contactGradient)" stroke-width="1" opacity="0.6">
+    <line x1="150" y1="80" x2="280" y2="110" />
+    <line x1="650" y1="80" x2="520" y2="110" />
+    <line x1="650" y1="320" x2="520" y2="290" />
+    <line x1="150" y1="320" x2="280" y2="290" />
+  </g>
+  
+  <!-- Outer satellites -->
+  <g fill="url(#contactGradient)" opacity="0.8">
+    <circle cx="150" cy="80" r="8" />
+    <circle cx="650" cy="80" r="8" />
+    <circle cx="650" cy="320" r="8" />
+    <circle cx="150" cy="320" r="8" />
+  </g>
+  
+  <!-- Digital transformation waves -->
+  <g stroke="url(#goldAccent)" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="400" cy="200" r="60">
+      <animate attributeName="r" values="60;80;60" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="200" r="80">
+      <animate attributeName="r" values="80;100;80" dur="4s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0;0.4" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

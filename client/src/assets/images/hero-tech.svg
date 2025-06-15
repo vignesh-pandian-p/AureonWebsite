@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#heroGradient)" opacity="0.1"/>
+  
+  <!-- Network connections -->
+  <g stroke="#2563eb" stroke-width="2" fill="none" opacity="0.3">
+    <line x1="100" y1="150" x2="300" y2="200" />
+    <line x1="300" y1="200" x2="500" y2="180" />
+    <line x1="500" y1="180" x2="700" y2="220" />
+    <line x1="200" y1="350" x2="400" y2="300" />
+    <line x1="400" y1="300" x2="600" y2="350" />
+    <line x1="150" y1="450" x2="350" y2="420" />
+    <line x1="350" y1="420" x2="550" y2="450" />
+  </g>
+  
+  <!-- Code blocks -->
+  <g fill="url(#heroGradient)" opacity="0.8">
+    <rect x="80" y="120" width="140" height="80" rx="8" />
+    <rect x="280" y="160" width="140" height="80" rx="8" />
+    <rect x="480" y="140" width="140" height="80" rx="8" />
+    <rect x="180" y="320" width="140" height="80" rx="8" />
+    <rect x="380" y="270" width="140" height="80" rx="8" />
+    <rect x="580" y="320" width="140" height="80" rx="8" />
+  </g>
+  
+  <!-- Code symbols -->
+  <g fill="white" font-family="monospace" font-size="14">
+    <text x="100" y="150">&lt;/&gt;</text>
+    <text x="300" y="190">{ }</text>
+    <text x="500" y="170">λ</text>
+    <text x="200" y="350">API</text>
+    <text x="400" y="300">DB</text>
+    <text x="600" y="350">AI</text>
+  </g>
+  
+  <!-- Lightning bolt for speed -->
+  <g fill="url(#accentGradient)">
+    <path d="M400 50 L380 120 L420 120 L390 180 L430 100 L400 100 Z" />
+  </g>
+  
+  <!-- Floating particles -->
+  <g fill="url(#accentGradient)" opacity="0.6">
+    <circle cx="120" cy="80" r="3" />
+    <circle cx="680" cy="120" r="2" />
+    <circle cx="150" cy="280" r="2.5" />
+    <circle cx="650" cy="480" r="3" />
+    <circle cx="80" cy="520" r="2" />
+    <circle cx="720" cy="380" r="2.5" />
+  </g>
+</svg>

@@ -77,8 +77,8 @@ export default function Hero() {
             className="relative"
           >
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=600" 
-              alt="Modern IT office space with collaborative workspace" 
+              src="/src/assets/images/hero-tech.svg" 
+              alt="Modern IT network infrastructure with connected technology nodes" 
               className="rounded-2xl shadow-2xl w-full"
             />
             <motion.div 
